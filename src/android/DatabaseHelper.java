@@ -36,7 +36,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		 Log.d("CordovaLog","Inside CreateDatabase getAbsolutePath= "+dbPath.getAbsolutePath());
 		Log.d("CordovaLog","Inside CreateDatabase path = "+dbPath.getPath());
 		databasePath = dbPath.getAbsolutePath();
-		this.getReadableDatabase();
+		// this.getReadableDatabase();
 		try {
 			copyDatabase(dbPath, source, callbackContext);
 		} catch (IOException e) {
